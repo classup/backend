@@ -1,0 +1,51 @@
+{
+  "name": "Classes",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Tagline": {
+      "type": "string"
+    },
+    "Phone_number": {
+      "type": "number"
+    },
+    "list_of_streams": {
+      "type": [
+        "string"
+      ]
+    },
+    "list_of_subjects": {
+      "type": [
+        "string"
+      ]
+    },
+    "list_of_teachers": {
+      "type": [
+        "string"
+      ]
+    },
+    "list_of_merit_Rankers": {
+      "type": [
+        "string"
+      ]
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$unauthenticated",
+      "permission": "DENY"
+    }
+  ],
+  "methods": {}
+}
